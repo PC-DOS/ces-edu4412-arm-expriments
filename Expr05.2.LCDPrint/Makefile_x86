@@ -1,0 +1,9 @@
+CC=gcc
+STRIP=strip
+
+all:
+	$(CC) -W -o PrintToLCD PrintToLCD.c
+	$(STRIP) PrintToLCD
+
+clean:
+	rm -f PrintToLCD
